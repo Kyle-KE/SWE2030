@@ -129,12 +129,13 @@ public class HelloWorld
         Console.WriteLine("\nAdditional if else statement");
         int age;
         Console.WriteLine("Enter your age");
-        age= Console.Read();
+        string input= Console.ReadLine();
+        int.TryParse(input, out age);
         if(age<18){
-            Console.WriteLine("Child mode has been activated due to your age");
+            Console.WriteLine("You are a child");
         }
         else{
-            Console.WriteLine("Adult mode has been activated due to your age");
+            Console.WriteLine("You are an adult");
         }
         
         
